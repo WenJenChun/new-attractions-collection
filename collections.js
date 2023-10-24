@@ -18,7 +18,7 @@ function init(){
     let str = "";
     apiDatas.forEach(function(item){
       str += `
-          <div class="col-6">
+          <div class="col-6 mt-3">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title text-center">${item.view.name}</h5>
