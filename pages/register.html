@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attractions Collection</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">
+              <img class="logo" src="/assets/images/logo.png" alt="" >
+            </a>
+            <div id="navBar" class="ms-auto">
+               
+            </div>
+          </div>
+      </nav>
+      </header>
+    <div class="container" >
+        <div class="d-flex justify-content-center align-items-center" style="height: calc(100vh - 58px - 56px);">
+            <form>  
+                <div class="row mb-3">
+                    <label for="newName" class="col-form-label">名稱</label>
+                    <div class="col">
+                        <input type="text" class="form-control" id="newName">
+                    </div>
+                </div>         
+                <div class="row mb-3">
+                    <label for="newEmail" class="col-form-label">Email</label>
+                    <div class="col">
+                        <input type="email" class="form-control" id="newEmail">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="newPassword" class="col-form-label">密碼</label>
+                    <div class="col">
+                        <input type="password" class="form-control" id="newPassword">
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <input id="registerBtn" type="button" class="btn btn-secondary text-white " value="註冊">
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    
+    
+    <%- include('./layout/footer'); -%>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/register.js"></script>
+  </body>
+</html>
+
