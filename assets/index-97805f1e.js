@@ -1,4 +1,4 @@
-import{a as l,h as c,r as t}from"./config-2029f25f.js";console.log(l);console.log(c);const r=localStorage.getItem("token")!==null,i=localStorage.getItem("role")==="admin",n=document.querySelector("#navBar"),d=document.querySelector("#greeting"),m=document.querySelector("#attraction");function u(){axios.get(l+"/views").then(function(e){console.log(e.data);const s=e.data;let a="";s.forEach(function(o){a+=`
+import{a as l,h as c,r as t}from"./config-2b8a8b87.js";console.log(l);console.log(c);const r=localStorage.getItem("token")!==null,i=localStorage.getItem("role")==="admin",n=document.querySelector("#navBar"),d=document.querySelector("#greeting"),m=document.querySelector("#attraction");function u(){axios.get(l+"/views").then(function(e){console.log(e.data);const s=e.data;let a="";s.forEach(function(o){a+=`
           <div class="col-6 mt-3">
             <div class="card">
               <div class="card-body">

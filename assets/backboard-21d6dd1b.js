@@ -1,4 +1,4 @@
-import{a as l,r as e,h as s}from"./config-2029f25f.js";const d=localStorage.getItem("token")!==null,u=localStorage.getItem("role")==="admin";localStorage.getItem("userId");const n=document.querySelector("#navBar"),m=document.querySelector("#attractionList");function h(){axios.get(l+"/views").then(function(o){console.log(o.data);const r=o.data;let a="";r.forEach(function(t){a+=`
+import{a as l,r as e,h as s}from"./config-2b8a8b87.js";const d=localStorage.getItem("token")!==null,u=localStorage.getItem("role")==="admin";localStorage.getItem("userId");const n=document.querySelector("#navBar"),m=document.querySelector("#attractionList");function h(){axios.get(l+"/views").then(function(o){console.log(o.data);const r=o.data;let a="";r.forEach(function(t){a+=`
         <tr>
             <th scope="row">${t.id}</th>
             <td>${t.name}</td>
