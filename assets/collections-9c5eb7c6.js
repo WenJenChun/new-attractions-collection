@@ -1,5 +1,5 @@
 import{a as c,r as t,h as s}from"./config-2b8a8b87.js";const i=localStorage.getItem("token")!==null,r=localStorage.getItem("role")==="admin",d=localStorage.getItem("userId"),a=document.querySelector("#navBar"),m=document.querySelector("#collections");function u(){axios.get(c+"/collections?userId="+d+"&_expand=view").then(function(e){console.log(e.data);const l=e.data;let n="";l.forEach(function(o){n+=`
-          <div class="col-6">
+          <div class="col-6 mt-3">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title text-center">${o.view.name}</h5>
