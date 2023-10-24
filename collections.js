@@ -67,7 +67,7 @@ function checkLogIn(){
       localStorage.removeItem("role");
       localStorage.removeItem("userId");
       location.reload();
-      window.location.href = `${hostUrl}${route}/index.html`;;
+      window.location.href = `${hostUrl}${route}/index.html`;
     });
   }
 }

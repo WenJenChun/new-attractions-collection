@@ -29,7 +29,7 @@ function getAttractionDetail() {
 getAttractionDetail()
 
 cancelEditingBtn.addEventListener("click", function(){
-  window.location.href = `${hostUrl}${route}/backboard.html`;;
+  window.location.href = `${hostUrl}${route}/backboard.html`;
 });
 
 function saveChanges(){
@@ -49,8 +49,8 @@ function saveChanges(){
 
 saveChangeBtn.addEventListener("click", function(){
   saveChanges();
-  window.location.href = `${hostUrl}${route}/backboard.html`;;
-
+  location.reload();
+  window.location.href = `${hostUrl}${route}/backboard.html`;
 });
 
 function checkLogIn(){
@@ -82,7 +82,7 @@ function checkLogIn(){
       localStorage.removeItem("role");
       localStorage.removeItem("userId");
       location.reload();
-      window.location.href = `${hostUrl}${route}/index.html`;;
+      window.location.href = `${hostUrl}${route}/index.html`;
     });
   }
 }

@@ -59,7 +59,7 @@ function checkLogIn() {
       `;
     collectBtn.addEventListener("click", function () {
       alert("請先登入!");
-      window.location.href = `${hostUrl}${route}/login.html`;;
+      window.location.href = `${hostUrl}${route}/login.html`;
     });
     collectBtn.textContent = "尚未收藏";
   } else {
@@ -81,7 +81,7 @@ function checkLogIn() {
       localStorage.removeItem("role");
       localStorage.removeItem("userId");
       location.reload();
-      window.location.href = `${hostUrl}${route}/index.html`;;
+      window.location.href = `${hostUrl}${route}/index.html`;
     });
 
     //.find()會找到符合資料的物件並回傳整個物件

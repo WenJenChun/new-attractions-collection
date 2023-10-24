@@ -15,7 +15,7 @@ const cancelEditingBtn = document.querySelector('#cancelEditing');
 const token = localStorage.getItem("token");
 
 cancelEditingBtn.addEventListener("click", function(){
-  window.location.href = `${hostUrl}${route}/backboard.html`;;
+  window.location.href = `${hostUrl}${route}/backboard.html`;
 });
 
 function addAttraction(){
@@ -35,7 +35,7 @@ function addAttraction(){
 
 saveChangeBtn.addEventListener("click", function(){
   addAttraction();
-  window.location.href = `${hostUrl}${route}/backboard.html`;;
+  window.location.href = `${hostUrl}${route}/backboard.html`;
 });
 
 function checkLogIn(){
@@ -67,7 +67,7 @@ function checkLogIn(){
       localStorage.removeItem("role");
       localStorage.removeItem("userId");
       location.reload();
-      window.location.href = `${hostUrl}${route}/index.html`;;
+      window.location.href = `${hostUrl}${route}/index.html`;
     });
   }
 }

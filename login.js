@@ -41,7 +41,7 @@ function logIn(){
 loginBtn.addEventListener("click", function(e){
     logIn();
     alert("歡迎回來！");
-    window.location.href = `${hostUrl}${route}/index.html`;;
+    window.location.href = `${hostUrl}${route}/index.html`;
 
 });
 

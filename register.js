@@ -35,7 +35,7 @@ function register(){
 registerBtn.addEventListener("click", function(e){
     register();
     alert("註冊成功!");
-    window.location.href = `${hostUrl}${route}/index.html`;;
+    window.location.href = `${hostUrl}${route}/index.html`;
 });
 
 function checkLogIn(){
