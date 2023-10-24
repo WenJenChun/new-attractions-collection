@@ -4,7 +4,7 @@
 
 使用 Vite, ejs, bootstrap, scss 
 
-網址：
+網址：https://wenjenchun.github.io/new-attractions-collection/
 
 ### 開發紀錄：
 - 10/4 畫好基本線稿
