@@ -8,7 +8,6 @@ const navBar = document.querySelector('#navBar');
 
 const attractionList = document.querySelector('#attractionList');
 
-
 //獲取 api 資料並顯示在網頁上
 function init(){
   axios.get(apiUrl+"/views")
@@ -49,7 +48,17 @@ function init(){
   });
 };
 
-init();
+//確認權限
+function checkUser(){
+  if(!isAdmin){
+    alert("無權限");
+    window.location.href = `${hostUrl}${route}/index.html`;
+  } else {
+    init();
+  }
+}
+
+checkUser();
 
 
 function checkLogIn(){
