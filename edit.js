@@ -32,26 +32,24 @@ cancelEditingBtn.addEventListener("click", function(){
   window.location.href = `${hostUrl}${route}/backboard.html`;
 });
 
-function saveChanges(){
-  axios.patch(`${apiUrl}/views/${id}`,{
-      "name": placeName.value,
-      "description": placeDetail.value
-  },{
-      // headers:{
-      //     "authorization": `Bearer ${token}` // Bearer是加密用
-      // }
-  }).then(function(res){
-      console.log(res.response);
-  }).catch(function(error){
-      console.log(error.response)
+function saveChanges() {
+  axios.patch(`${apiUrl}/views/${id}`, {
+    "name": placeName.value,
+    "description": placeDetail.value
+  }).then(function(res) {
+    console.log(res.response);
+    alert("修改成功");
+    window.location.href = `${hostUrl}${route}/backboard.html`;
+  }).catch(function(error) {
+    console.log("修改景點時出錯了：");
+    console.log(error.response);
   });
 }
 
-saveChangeBtn.addEventListener("click", function(){
+saveChangeBtn.addEventListener("click", function() {
   saveChanges();
-  location.reload();
-  window.location.href = `${hostUrl}${route}/backboard.html`;
 });
+
 
 function checkLogIn(){
   if(!isLogIn){

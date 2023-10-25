@@ -26,16 +26,19 @@ function addAttraction(){
     headers:{
         "authorization": `Bearer ${token}` // Bearer是加密用
     }
-}).then(function(res){
+  }).then(function(res){
       console.log(res.response);
-  }).catch(function(error){
-      console.log(error.response)
+      alert("新增成功");
+      window.location.href = `${hostUrl}${route}/backboard.html`;
+  }).catch(function(error) {
+      console.log("新增景點時出錯了：");
+      console.log(error.response);
   });
-}
+  }
 
 saveChangeBtn.addEventListener("click", function(){
+  console.log("按了新增");
   addAttraction();
-  window.location.href = `${hostUrl}${route}/backboard.html`;
 });
 
 function checkLogIn(){

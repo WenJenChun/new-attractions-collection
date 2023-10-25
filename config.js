@@ -1,7 +1,7 @@
 
 //本機測試使用
 // const hostUrl = "http://localhost:5173";
-// const route = "/attractions-collection/pages"; 
+// const route = "/new-attractions-collection/pages"; 
 // const apiUrl = "http://localhost:3000";
 
 
